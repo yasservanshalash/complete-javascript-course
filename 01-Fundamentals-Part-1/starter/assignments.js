@@ -15,10 +15,16 @@ console.log("country", population);
 //  =========== Data Types ===========
 
 
-let isIsland = false;
+const isIsland = false;
 let language;
 
 console.log("isIsland", isIsland);
 console.log("population", population);
 console.log("country", country);
+console.log("language", language);
+
+
+//  =========== let const var ===========
+
+language = "Arabic";
 console.log("language", language);
