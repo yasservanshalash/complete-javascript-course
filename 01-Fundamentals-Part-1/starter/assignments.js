@@ -28,3 +28,35 @@ console.log("language", language);
 
 language = "Arabic";
 console.log("language", language);
+
+//  =========== Basic Operators ===========
+
+let halfOfPopulation = population / 2;
+console.log("halfOfPopulation", halfOfPopulation);
+
+let populationPlusOne = population + 1;
+console.log("populationPlusOne", populationPlusOne)
+
+if (population > 6000000) {
+    console.log(country + " has more people than Finland")
+}
+else {
+    console.log(country + " has less people than Finland")
+}
+
+if (population > 33000000) {
+    console.log(country + " has more people than average country population")
+}
+else {
+    console.log(country + " has less people than average country population")
+}
+
+let description = country + " is in " + continent + ", and it's " + population + " people speak " + language;
+console.log(description)
+
+
+
+//  =========== Strings and Template Literals ===========
+
+description = `${country} is in ${continent}, and it's ${population} people speak ${language}`
+console.log(description)
