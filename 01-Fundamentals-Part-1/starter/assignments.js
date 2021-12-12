@@ -55,3 +55,8 @@ let description = country + " is in " + continent + ", and it's " + population +
 console.log(description)
 
 
+
+//  =========== Strings and Template Literals ===========
+
+description = `${country} is in ${continent}, and it's ${population} people speak ${language}`
+console.log(description)
