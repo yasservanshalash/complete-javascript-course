@@ -153,3 +153,11 @@ switch(language) {
         break;
     default: console.log("Great language too! :D")
 }
+
+
+//  =========== The Conditional (Ternary) Operator ===========
+
+let country = "Syria";
+let population = 13000000;
+let countryPopulation = population > 33000000 ? `${country}'s population is above average` : `${country}'s population is below average`;
+console.log(countryPopulation);
