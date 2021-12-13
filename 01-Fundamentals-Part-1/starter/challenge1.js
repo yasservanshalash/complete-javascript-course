@@ -18,7 +18,7 @@ markHigherBMI = markBMI > johnBMI
 let markMass = 95;
 let markHeight = 1.88;
 let johnMass = 85;
-let johnHeight = 1.76;
+let johnHeight = 1.7;
 
 function bmi(mass, height) {
     return mass / (height ** 2);

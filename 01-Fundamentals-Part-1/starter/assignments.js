@@ -60,3 +60,26 @@ console.log(description)
 
 description = `${country} is in ${continent}, and it's ${population} people speak ${language}`
 console.log(description)
+
+
+//  =========== Taking Decisions: if / else Statements ===========
+
+
+
+if (population > 33000000) {
+    console.log(country + "'s population is above average")
+} else {
+    console.log(`${country}'s population is ${33000000 - population} below average`)
+}
+
+if (13000000 > 33000000) {
+    console.log(country + "'s population is above average")
+} else {
+    console.log(`${country}'s population is ${33000000 - 13000000} below average`)
+}
+
+if (130000000 > 33000000) {
+    console.log(country + "'s population is above average")
+} else {
+    console.log(`${country}'s population is ${33000000 - 130000000} below average`)
+}
