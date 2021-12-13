@@ -126,3 +126,30 @@ if((population < 50000000) && (language === "English") && !isIsland) {
 } else {
     console.log(`${country} is not a good choice for Sarah`)
 }
+
+
+
+//  =========== The switch Statement ===========
+
+
+let language = "English";
+
+switch(language) {
+    case "Chinese":
+    case "Mandarin":
+        console.log("MOST number of native speakers!");
+        break;
+    case "Spanish":
+        console.log("2nd place in number of native speakers");
+        break;
+    case "English":
+        console.log("3rd place");
+        break;
+    case "Indian":
+        console.log("4th");
+        break;
+    case "Arabic":
+        console.log("5th most spoken language");
+        break;
+    default: console.log("Great language too! :D")
+}
