@@ -98,15 +98,6 @@ if (130000000 > 33000000) {
 //  ===========  Equality Operators: == vs. === ===========
 
 
-// let numNeighbours = prompt('How many neighbour countries does your country have?');
-
-// if(numNeighbours == 1) {
-//     console.log("Only 1 border!");
-// } else if(numNeighbours > 1) {
-//     console.log("More than 1 border");
-// } else {
-//     console.log("No borders");
-// }
 
 
 let numNeighbours = Number(prompt('How many neighbour countries does your country have?'));
@@ -117,4 +108,21 @@ if(numNeighbours === 1) {
     console.log("More than 1 border");
 } else {
     console.log("No borders");
+}
+
+
+
+//  ===========  Logical Operators ===========
+
+
+let country = "Syria";
+let population = 17500000;
+const isIsland = false;
+let language = "Arabic";
+
+
+if((population < 50000000) && (language === "English") && !isIsland) {
+    console.log(`${country} is a good choice for Sarah`)
+} else {
+    console.log(`${country} is not a good choice for Sarah`)
 }
