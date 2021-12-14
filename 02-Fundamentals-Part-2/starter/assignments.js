@@ -63,6 +63,34 @@ console.log(lebanon);
 
 // Introduction to Arrays
 
-let populations = [1441000000, 17500000,5000000, 1393409038]
+function percentageOfWorld1(population) {
+    return (population * 100)/7900000000;
+}
 
-console.log(populations.length === 4)
+let populations = [1441000000, 17500000,5000000, 1393409038];
+
+console.log(populations.length === 4);
+
+let percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
+
+
+// Basic Array Operations (Methods)
+
+let neighbours = ["Lebanon", "Turkey", "Iraq", "Jordan"];
+console.log(neighbours);
+
+neighbours.push("Utopia");
+console.log(neighbours);
+
+neighbours.pop();
+console.log(neighbours);
+
+
+let includesGermany = neighbours.includes("Germany");
+
+if (!includesGermany) {
+    console.log("Probably not a central European country :D");
+}
+
+neighbours[3] = "Republic of Jordan";
+console.log(neighbours);
