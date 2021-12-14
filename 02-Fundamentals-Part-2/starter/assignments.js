@@ -32,3 +32,11 @@ console.log(`The population of China makes about ${percentageOfWorld2(1441000000
 console.log(`The population of Syria makes about ${percentageOfWorld2(17500000)}% of the world's population`);
 console.log(`The population of Finland makes about ${percentageOfWorld2(6000000)}% of the world's population`);
 
+// Arrow functions
+
+const percentageOfWorld3 = (population) => (population * 100)/7900000000;
+
+
+console.log(`The population of China makes about ${percentageOfWorld3(1441000000)}% of the world's population`);
+console.log(`The population of Syria makes about ${percentageOfWorld3(17500000)}% of the world's population`);
+console.log(`The population of Finland makes about ${percentageOfWorld3(6000000)}% of the world's population`);
