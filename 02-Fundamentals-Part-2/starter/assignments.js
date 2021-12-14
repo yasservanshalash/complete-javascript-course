@@ -60,3 +60,9 @@ let lebanon = describePopulation("Lebanon", 5000000);
 console.log(china);
 console.log(syria);
 console.log(lebanon);
+
+// Introduction to Arrays
+
+let populations = [1441000000, 17500000,5000000, 1393409038]
+
+console.log(populations.length === 4)
