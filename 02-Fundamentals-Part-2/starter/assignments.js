@@ -130,13 +130,39 @@ myCountry = {
         and a capital called ${this.capital}.`)
     },
     checkIsland: function() {
-        if(this.neighbours.length === 0){
-            this.isIsland = true;
-        } else {
-            this.isLand = false;
-        }
+        this.neighbours.length === 0 ? this.isIsland = true : this.isIsland = false;
     },
 }
 
 myCountry.describe();
 myCountry.checkIsland();
+
+
+// The for Loop
+
+for(let i = 1; i <= 50; i++){
+    console.log(`voter number ${i} is voting`);
+}
+
+
+
+// Looping Arrays, Breaking and Continuing
+
+
+
+let populations = [1441000000, 17500000,5000000, 1393409038];
+
+let percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
+
+let percentages2 = [];
+
+function percentageOfWorld1(population) {
+    return (population * 100)/7900000000;
+}
+
+for(let i = 0; i < length.length; i++){
+    percentages2.push(percentageOfWorld1(populations[i]))
+    console.log(percentages2)
+}
+
+console.log(percentages2);
