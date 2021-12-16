@@ -149,20 +149,57 @@ for(let i = 1; i <= 50; i++){
 // Looping Arrays, Breaking and Continuing
 
 
-
 let populations = [1441000000, 17500000,5000000, 1393409038];
 
-let percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
-
-let percentages2 = [];
 
 function percentageOfWorld1(population) {
     return (population * 100)/7900000000;
 }
 
-for(let i = 0; i < length.length; i++){
+let percentages2 = [];
+
+for(let i = 0; i < populations.length; i++){
     percentages2.push(percentageOfWorld1(populations[i]))
-    console.log(percentages2)
 }
 
 console.log(percentages2);
+
+let percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
+
+console.log(percentages);
+
+
+// Looping Backwards and Loops in Loops
+
+let listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+
+for(let i = 0; i < listOfNeighbours.length; i++) {
+    for(let y = 0; y < listOfNeighbours[i].length; y++) {
+        console.log(`Neighbour: ${listOfNeighbours[i][y]}`)
+    }
+}
+
+//  The while Loop
+
+// let populations = [1441000000, 17500000,5000000, 1393409038];
+
+
+// function percentageOfWorld1(population) {
+//     return (population * 100)/7900000000;
+// }
+
+// let percentages3 = [];
+
+// let i = 0
+// while(percentages3.length < populations.length){
+//     percentages3.push(percentageOfWorld1(populations[i]));
+//     i++
+// }
+
+let populations = [1441000000, 17500000,5000000, 1393409038];
+
+let i = 0
+while(percentages3.length < populations.length){
+    percentages3.push(percentageOfWorld1(populations[i]));
+    i++
+}
