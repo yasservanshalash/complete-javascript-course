@@ -4,8 +4,8 @@ let mark = {
     mass: 78,
     height: 1.69,
     calcBMI: function() {
-        BMI = this.mass / this.height ** 2;
-        return BMI;
+        this.BMI = this.mass / this.height ** 2;
+        return this.BMI;
     },
 }
 
@@ -15,25 +15,20 @@ let john = {
     mass: 92,
     height: 1.95,
     calcBMI: function() {
-        BMI = this.mass / this.height ** 2;
-        return BMI;
+        this.BMI = this.mass / this.height ** 2;
     },
 }
 
-john.BMI = john.calcBMI()
-mark.BMI = mark.calcBMI()
 
+mark.calcBMI()
+john.calcBMI()
 
-console.log(john.BMI)
-console(mark.BMI)
-// console.log(mark.calcBMI() > john.calcBMI())
-// console.log(mark.calcBMI())
-// console.log(john.calcBMI())
+console.log(mark.BMI, john.BMI)
 
-// if(mark.calcBMI() > john.calcBMI()){
-//     console.log(`${mark.firstName}'s BMI (${mark.calcBMI()}) is Higher than ${john.firstName}'s (${john.calcBMI()})`)
-// } else if(mark.calcBMI() < john.calcBMI()) {
-//     console.log(`${john.firstName}'s BMI (${john.calcBMI()}) is Higher than ${mark.firstName}'s (${mark.calcBMI()})`)
-// } else {
-//     console.log("same BMI")
-// }
+if(mark.BMI > john.BMI){
+    console.log(`${mark.firstName}'s BMI (${mark.BMI}) is Higher than ${john.firstName}'s (${john.BMI})`)
+} else if(mark.BMI < john.BMI) {
+    console.log(`${john.firstName}'s BMI (${john.BMI}) is Higher than ${mark.firstName}'s (${mark.BMI})`)
+} else {
+    console.log("same BMI")
+}
