@@ -94,3 +94,49 @@ if (!includesGermany) {
 
 neighbours[3] = "Republic of Jordan";
 console.log(neighbours);
+
+// Introduction to Objects
+
+let myCountry = {
+    country: "Syria",
+    capital: "Damascus",
+    language: "Arabic",
+    population: 17500000,
+    neighbours: ["Lebanon", "Turkey", "Iraq", "Jordan"]
+}
+
+
+// Dot vs. Bracket Notation
+
+console.log(`${myCountry.country} has ${myCountry.population} ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries 
+and a capital called ${myCountry.capital}.`)
+
+myCountry.population += 2000000;
+console.log(myCountry.population);
+myCountry['population'] -= 2000000;
+console.log(myCountry.population);
+
+
+//  Object Methods
+
+myCountry = {
+    country: "Syria",
+    capital: "Damascus",
+    language: "Arabic",
+    population: 17500000,
+    neighbours: ["Lebanon", "Turkey", "Iraq", "Jordan"],
+    describe: function () {
+        console.log(`${this.country} has ${this.population} ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries 
+        and a capital called ${this.capital}.`)
+    },
+    checkIsland: function() {
+        if(this.neighbours.length === 0){
+            this.isIsland = true;
+        } else {
+            this.isLand = false;
+        }
+    },
+}
+
+myCountry.describe();
+myCountry.checkIsland();
